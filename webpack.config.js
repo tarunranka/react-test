@@ -1,24 +1,26 @@
-/*
-    ./webpack.config.js
-*/
-const path = require('path');
 module.exports = {
-  entry: './client/index.js',
+  entry: [
+    './client/index.js'
+  ],
   output: {
-    path: path.resolve('dist'),
-    devtoolLineToLine: true,
-    sourceMapFilename: "./index_bundle.js.map",  
+    path: __dirname,
+    publicPath: '/',
     filename: 'index_bundle.js'
   },
   module: {
-    loaders: [
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
-    ]
+    loaders: [{
+      exclude: /node_modules/,
+      loader: 'babel',
+      query: {
+        presets: ['react', 'es2015', 'stage-1']
+      }
+    }]
   },
-  devtool: 'source-map',
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   devServer: {
     historyApiFallback: true,
     contentBase: './'
   }
-}
+};

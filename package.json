@@ -1,11 +1,11 @@
 {
   "name": "test",
-  "version": "1",
+  "version": "1.0.0",
   "description": "test",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
