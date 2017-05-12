@@ -1,0 +1,250 @@
+body {
+    font-family: 'Open Sans',helvetica,serif;
+    font-size: 1.3rem;
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 53px;
+}
+@media (min-width: 768px) {
+  body {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .navbar-fixed-bottom{
+    top: 0;
+    max-height: 100%;
+    left: 0;
+    max-width: 60px;
+  }
+}
+@media (max-width: 768px) {
+    [class*="col-"] {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .container-fluid,.container {
+      margin: 0;
+      padding: 0;
+    }
+}
+.productBox .media{
+  padding: 10px 15px;
+}
+.mdl-color-text--indigo-400 {
+    color: #1a237e;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+}
+.dark-grey{
+  color:#808080;
+}
+.light-grey{
+  color:#999;
+}
+.distance{
+  margin-right: 2px;
+  font-weight: 700;
+}
+.prd-thumb{
+  position: relative;
+}
+.prd{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.prod-detail{
+    position: absolute;
+    bottom: 8px;
+    margin: 0 10px;
+    color: #fff;
+}
+.prod-detail h2{
+  font-weight: 400;
+  margin: 0;
+  font-size: 17px;
+}
+.prod-detail .price{
+  font-weight: 700;
+  font-size: 17px;
+  margin: 0;
+}
+.prod-desc{
+  margin: 10px 10px 5px;
+}
+.prod-desc p{
+  font-size: 14px;
+  color: #656565;
+  margin-bottom: 0;
+}
+.prod-desc .hash{
+  margin-right: 5px;
+  color: #4f5dcd;
+  font-size: 14px;
+}
+.comments{
+  margin: 10px;
+}
+.navbar-pink{
+  background: #fd629c;
+  border: 0;
+}
+.nav-table{
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+.nav-table ul{
+  display: table-row;
+}
+.nav-table ul li{
+  display: table-cell;
+}
+.nav-table ul li a{
+  max-height: 54px;
+
+}
+.nav-table ul li a:hover,.nav-table ul li a.active{
+  background-color:#b14255;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/fonts/icomoon.eot?4qc7gw');
+  src:  url('/fonts/icomoon.eot?4qc7gw#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.ttf?4qc7gw') format('truetype'),
+    url('/fonts/icomoon.woff?4qc7gw') format('woff'),
+    url('/fonts/icomoon.svg?4qc7gw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 30px;
+  color:#fff;
+
+display: inline-block;
+white-space: nowrap;
+word-wrap: normal;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fi-camera:before {
+  content: "\e900";
+}
+.icon-fi-heart-o:before {
+  content: "\e901";
+}
+.icon-fi-heart:before {
+  content: "\e902";
+}
+.icon-fi-home:before {
+  content: "\e903";
+}
+.icon-fi-search:before {
+  content: "\e904";
+}
+.icon-fi-user:before {
+  content: "\e905";
+}
+.icon-paper-plane:before {
+  content: "\e906";
+}
+.product-fav{
+  margin: 0 0 10px;
+}
+.product-fav,.like{
+  color:#4f5dcd;
+  font-size: 21px;
+  vertical-align: middle;
+}
+.fav-text{
+  font-weight: 700;
+  margin-left: 5px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+.comment-box{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ddd;
+}
+.comment-box .form-group{
+  float: left;
+  width: 85%;
+  margin: 0;
+  width: calc(100% - 54px);
+}
+.comment-box .form-group.second{
+  float: left;
+  width: 15%;
+  width: 54px;
+}
+.comment-box textarea{
+  height: 54px;
+  resize: none;
+  border: 0;
+  border-radius: 0;
+
+  box-shadow: none;
+}
+.comment-box .btn{
+  height: 54px;
+  background: #fd629c;
+  border: 0;
+  border-radius: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+.comment-box .btn .icon-paper-plane{
+  vertical-align: middle;
+}
+
+.search{
+  background-image: linear-gradient(to bottom right, #fe5476, #ff7662);
+  padding: 50px 20px 0;
+}
+
+input::-webkit-input-placeholder,
+{
+  text-shadow: none;
+  -webkit-text-fill-color: initial;
+  font-size: 32px !important;
+}
+.distance-res{
+  margin: 30px 0 0;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+.sliderFilter{
+  border-bottom: 1px solid #d23d3a;
+}
+.distance-val{
+  font-weight: 700;
+}
+.trends h4{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin: 20px 0;
+}
