@@ -2,7 +2,7 @@ let menu = [
   {
     id: 0,
     title: 'Home',
-    url: '/',
+    url: '/react-test/',
     icon:'icon-fi-home'
   },
   {
@@ -26,7 +26,7 @@ let menu = [
   {
     id: 4,
     title: 'search',
-    url: '/search',
+    url: './search',
     icon:'icon-fi-search'
   }
 ]
